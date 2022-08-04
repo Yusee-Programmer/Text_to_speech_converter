@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ACIT converted audio download</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../static/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body bgcolor="#ffffdf">
+<center>
+  <div id="main">
+    <div class="centerblock">
+      <div class="lightgreen">
+        <div class="middle">
+          <div class="center">
+            <div class="center1">
+              <div class="center2"><a href="http://all-free-download.com/free-website-templates/"><img src="../static/images/boy.jpg" /></a> </div>
+              <div class="center3"> <span class="sound">{{ fname }}</span><br />
+                <span class="headphone"> <button> <a href="{{ url_for('static', filename='audio/' + fname) }}" class="headphone" download="{{ fname }}">Download</a></button> </span> </div>
+            </div>
+            <div class="center3">
+                <span class="headphone"> <button> <a href="{{ url_for('delete', fn=fname) }}" class="headphone">Delete the audio</a></button> </span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</center>
+</body>
+</html>

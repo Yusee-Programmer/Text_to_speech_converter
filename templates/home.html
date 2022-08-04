@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../static/style.css">
+	<title>ACIT NIGERIA text to speech converter</title>
+</head>
+<body>
+	<div class="wrapper">
+	  <h1 style="margin-bottom: 0px;">Welcome to ACIT NIGERIA </h1>
+	  <h1 style="margin-top: 0px; padding-top: 0px; border: 0px">Text-to-speech converter.</h1>
+	  <p style="font-size: 20px">Just write or upload your text(.txt) file to be converted to an audio(.mp3) file.</p>
+
+	  <form method="post" action="{{ url_for('get_audio') }}" enctype="multipart/form-data">
+	  	<p>Write some english phrase(s) here</p>
+	  	<textarea placeholder="Type here..." cols="50" rows="5" style="border: 3px solid" name="text"></textarea>
+
+	  	<p>Or upload a .txt file here.</p>
+	  	<input type="file" id="file" name="txt_file" />
+		<label for="file" />choose a file</label>
+
+		<input type="submit" value="Submit" class="btn-1"/>
+		<!-- <label for="file" class="btn-1">upload file</label> -->
+	  </form>
+	  <p class="footer">Developed by <a href="https://www.facebook.com/yusee.habibu">Yusee Programmer</a> on 21-Jul-2022</p>
+	</div>
+</body>
+</html>
